@@ -1,4 +1,6 @@
 import React from "react";
+import loginSvg from "@/assets/login.svg";
+import Image from "next/image";
 
 export const metadata = {
   title: "Add Task : Work Manager",
@@ -8,7 +10,15 @@ const AddTask = () => {
   return (
     <div className="border-4 border-yellow-500 grid grid-cols-12 justify-center w-screen">
       <div className="border-2 border-red-700 col-span-6 col-start-4 p-3 m-3 shadow-gray-200 shadow">
-        <h1 className="text-3xl">Add your task here !!</h1>
+        <div className="my-8 flex justify-center">
+          <Image
+            src={loginSvg}
+            style={{
+              width: "50%",
+            }}
+          />
+        </div>
+        <h1 className="text-3xl text-center">Add your task here !!</h1>
         <form action="#!">
           {/* task title  */}
           <div className="mt-4">
